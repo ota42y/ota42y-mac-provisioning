@@ -74,6 +74,12 @@
         creates: ~/Library/Fonts/Ricty-Bold.ttf
       notify: run fc-cache
 
+    - name: pythonのインストール
+      shell: |
+        pyenv install 3.5.0
+        pyenv global 3.5.0
+        pyenv rehash
+        
   handlers:
     - name: run fc-cache
       shell: fc-cache -vf
