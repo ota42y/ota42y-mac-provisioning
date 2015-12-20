@@ -12,6 +12,8 @@
     homebrew_packages:
       - { name: git }
       - { name: pyenv }
+      - { name: mysql }
+      - { name: erlang }
     homebrew_cask_packages:
       - { name: atom }
       - { name: kobito }
